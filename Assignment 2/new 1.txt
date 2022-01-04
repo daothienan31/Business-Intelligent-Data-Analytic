@@ -1,0 +1,17 @@
+Microsoft Windows [Version 10.0.19041.1052]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\daoth>cd desktop
+
+C:\Users\daoth\Desktop>py -m venv venv
+
+C:\Users\daoth\Desktop>venv\Script\activate
+The system cannot find the path specified.
+
+C:\Users\daoth\Desktop>venv\Scripts\activate
+
+(venv) C:\Users\daoth\Desktop>
+
+
+
+
