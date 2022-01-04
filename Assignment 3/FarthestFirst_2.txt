@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.FarthestFirst -N 2 -S 1
+Relation:     glass-weka.filters.unsupervised.instance.RemoveDuplicates
+Instances:    213
+Attributes:   10
+              Refractive Index (RI)
+              Sodium (unit measurement: weight percent in corresponding oxide, as are attributes 4-10) (Na)
+              Magnesium (Mg)
+              Aluminum (Al)
+              Silicon (Si)
+              Potassium (K)
+              Calsium (Ca)
+              Barium (Ba)
+              Iron (Fe)
+Ignored:
+              Outliers
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+FarthestFirst
+==============
+
+Cluster centroids:
+
+Cluster 0
+	 1.52177 13.2 3.68 1.15 72.75 0.54 8.52 0.0 0.0
+Cluster 1
+	 1.53125 10.73 0.0 2.1 69.81 0.58 13.3 3.15 0.28
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      209 ( 98%)
+1        4 (  2%)
+
+
+Class attribute: Outliers
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+ 200   4 | No
+   9   0 | Yes
+
+Cluster 0 <-- No
+Cluster 1 <-- No class
+
+Incorrectly clustered instances :	13.0	  6.1033 %
+

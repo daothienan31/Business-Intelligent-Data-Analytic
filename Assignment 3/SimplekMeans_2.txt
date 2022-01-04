@@ -1,0 +1,75 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     glass-weka.filters.unsupervised.instance.RemoveDuplicates
+Instances:    213
+Attributes:   10
+              Refractive Index (RI)
+              Sodium (unit measurement: weight percent in corresponding oxide, as are attributes 4-10) (Na)
+              Magnesium (Mg)
+              Aluminum (Al)
+              Silicon (Si)
+              Potassium (K)
+              Calsium (Ca)
+              Barium (Ba)
+              Iron (Fe)
+Ignored:
+              Outliers
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 9
+Within cluster sum of squared errors: 33.95923680763086
+
+Initial starting points (random):
+
+Cluster 0: 1.51832,13.33,3.34,1.54,72.14,0.56,8.99,0,0
+Cluster 1: 1.52101,13.64,4.49,1.1,71.78,0.06,8.75,0,0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                             Cluster#
+Attribute                                                                                        Full Data          0          1
+                                                                                                   (213.0)     (52.0)    (161.0)
+================================================================================================================================
+Refractive Index (RI)                                                                               1.5183     1.5191     1.5181
+Sodium (unit measurement: weight percent in corresponding oxide, as are attributes 4-10) (Na)      13.4041    13.8027    13.2753
+Magnesium (Mg)                                                                                      2.6792     0.2871     3.4518
+Aluminum (Al)                                                                                       1.4495      1.864     1.3156
+Silicon (Si)                                                                                       72.6551    72.7715    72.6175
+Potassium (K)                                                                                       0.4989     0.5013     0.4981
+Calsium (Ca)                                                                                        8.9541     9.9954     8.6178
+Barium (Ba)                                                                                         0.1759     0.6333     0.0281
+Iron (Fe)                                                                                           0.0573     0.0462     0.0609
+
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       52 ( 24%)
+1      161 ( 76%)
+
+
+Class attribute: Outliers
+Classes to Clusters:
+
+   0   1  <-- assigned to cluster
+  48 156 | No
+   4   5 | Yes
+
+Cluster 0 <-- Yes
+Cluster 1 <-- No
+
+Incorrectly clustered instances :	53.0	 24.8826 %
+

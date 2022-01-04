@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 6 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     glass-weka.filters.unsupervised.instance.RemoveDuplicates
+Instances:    213
+Attributes:   10
+              Refractive Index (RI)
+              Sodium (unit measurement: weight percent in corresponding oxide, as are attributes 4-10) (Na)
+              Magnesium (Mg)
+              Aluminum (Al)
+              Silicon (Si)
+              Potassium (K)
+              Calsium (Ca)
+              Barium (Ba)
+              Iron (Fe)
+Ignored:
+              Outliers
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 8
+Within cluster sum of squared errors: 19.7322333213
+
+Initial starting points (random):
+
+Cluster 0: 1.51832,13.33,3.34,1.54,72.14,0.56,8.99,0,0
+Cluster 1: 1.52101,13.64,4.49,1.1,71.78,0.06,8.75,0,0
+Cluster 2: 1.51756,13.15,3.61,1.05,73.24,0.57,8.24,0,0
+Cluster 3: 1.51888,14.99,0.78,1.74,72.5,0,9.95,0,0
+Cluster 4: 1.5202,13.98,1.35,1.63,71.76,0.39,10.56,0,0.18
+Cluster 5: 1.51743,12.2,3.25,1.16,73.55,0.62,8.9,0,0.24
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                             Cluster#
+Attribute                                                                                        Full Data          0          1          2          3          4          5
+                                                                                                   (213.0)     (11.0)     (20.0)     (94.0)     (29.0)     (19.0)     (40.0)
+============================================================================================================================================================================
+Refractive Index (RI)                                                                               1.5183     1.5178     1.5222     1.5173     1.5163     1.5236     1.5181
+Sodium (unit measurement: weight percent in corresponding oxide, as are attributes 4-10) (Na)      13.4041    14.1891     13.846      13.18    14.4221    12.7263    13.0777
+Magnesium (Mg)                                                                                      2.6792     2.4282      3.694       3.48     0.0269     0.3305     3.3975
+Aluminum (Al)                                                                                       1.4495     1.9518     0.8475     1.3897     2.1793     1.2979     1.2957
+Silicon (Si)                                                                                       72.6551      71.83    71.7165      72.81    73.1548    72.4842     72.706
+Potassium (K)                                                                                       0.4989     0.6973     0.1215      0.553     0.6183     0.2768     0.5248
+Calsium (Ca)                                                                                        8.9541     8.1318      9.624     8.3796     8.6448    12.5016     8.7345
+Barium (Ba)                                                                                         0.1759     0.6782     0.0345     0.0027     0.8586     0.1658     0.0253
+Iron (Fe)                                                                                           0.0573          0     0.0235      0.012     0.0134     0.0789     0.2178
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       11 (  5%)
+1       20 (  9%)
+2       94 ( 44%)
+3       29 ( 14%)
+4       19 (  9%)
+5       40 ( 19%)
+
+
+Class attribute: Outliers
+Classes to Clusters:
+
+  0  1  2  3  4  5  <-- assigned to cluster
+  8 20 92 26 18 40 | No
+  3  0  2  3  1  0 | Yes
+
+Cluster 0 <-- No class
+Cluster 1 <-- No class
+Cluster 2 <-- No
+Cluster 3 <-- Yes
+Cluster 4 <-- No class
+Cluster 5 <-- No class
+
+Incorrectly clustered instances :	118.0	 55.3991 %
+
