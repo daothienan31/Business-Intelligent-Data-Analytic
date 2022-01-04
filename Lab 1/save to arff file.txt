@@ -1,0 +1,15 @@
+% This file gives information about salary of employees who are working different countries
+
+@RELATION empfile
+
+@ATTRIBUTE Id string
+... string
+... string
+... string
+... string
+... {China, Germany, Japan, Mexico, U.S.A.}
+... {1, 2, 3, 4, 6}
+... {CHY,...
+... numberic
+
+save as ".arff
